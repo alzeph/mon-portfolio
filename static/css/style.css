@@ -1,0 +1,231 @@
+.text-primary-ch {
+    background: linear-gradient(45deg,
+            #FF8C00 25%,
+            #FF4500 50%,
+            #FFD700 75%,
+            #FF6347 100%,
+            #FF1493 25%);
+    /* Dégradé linéaire */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero {
+    position: relative;
+    background-color: #c9a991;
+
+    background: linear-gradient(45deg,
+            #FF8C00 25%,
+            #FF4500 50%,
+            #FFD700 75%,
+            #FF6347 100%,
+            #FF1493 25%);
+    color: white;
+    background-blend-mode: lighten;
+}
+
+.bg-linear {
+    background-color: #c9a991;
+
+    background: linear-gradient(45deg,
+            #FF8C00 25%,
+            #FF4500 50%,
+            #FFD700 75%,
+            #FF6347 100%,
+            #FF1493 25%);
+    background-blend-mode: lighten;
+}
+
+.text-jaune {
+    color: #FFFF00
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+}
+
+.presentation {
+    min-height: 100vh;
+    background-image: url('/static/img/cedric.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+div,
+section {
+    max-width: 100vw;
+    overflow: hidden;
+    border: none;
+}
+
+body {
+    overflow-y: auto;
+}
+
+.container-social {
+    display: flex;
+    gap: 1em;
+}
+
+.container-social a {
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.suite a {
+    display: block;
+    width: 100%;
+    
+    font-size: large;
+    text-decoration: none;
+}
+
+.img-profile {
+    position: relative;
+    display: block;
+    padding: 1em;
+}
+
+.img-profile img {
+    filter: drop-shadow(0px 0px 20px #fff);
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.img-profile::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+
+    border-top: 1em solid #ffffff00;
+    border-right: 1em solid #fff;
+    border-left: 1em solid #fff;
+    border-bottom: 1em solid #ffffff00;
+    border-radius: 100%;
+    animation: focus 30s ease-in-out infinite;
+
+}
+
+
+@keyframes focus {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+
+    }
+}
+
+.framework {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.framework img {
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+    .framework img {
+        height: 50px;
+    }
+
+    .mini-logo img {
+        height: 40px;
+    }
+}
+
+.card-realisation {
+    border: none;
+}
+
+.mini-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+}
+
+.mini-logo img {
+    height: 30px;
+}
+
+.shadow-ch {
+    filter: drop-shadow(0px 0px 10px #ff8c0030);
+    border-radius: 20px;
+}
+
+.shadow-ch img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.nav-item {
+    width: max-content;
+}
+
+.nav-item .nav-link {
+    width: max-content;
+}
+
+.testimonial-list .card {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+    border: 1px solid rgba(255, 255, 255, 0.63);
+}
+
+.testimonial-list .card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-list .card .card-body p {
+    border-left: 5px solid #ded1d1;
+    padding: 1em;
+    background-color: #f1f1f1;
+    flex-grow: 1;
+    /* Correction de la propriété flex-grow */
+    display: block;
+}
+
+.testimonial-list {
+    display: flex;
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+    border: 1px solid rgba(255, 255, 255, 0.63);
+}

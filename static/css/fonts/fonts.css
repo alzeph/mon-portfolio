@@ -1,0 +1,64 @@
+/* src/assets/fonts/fonts.css */
+
+@font-face {
+    font-family: 'title';
+    /* Nom de la police pour les titres */
+    src: url('./title/title.ttf') format('truetype'),
+         url('./title/title.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* src/assets/fonts/fonts.css */
+
+@font-face {
+    font-family: 'body';
+    /* Nom de la police */
+    src: url('./body/body.ttf') format('truetype');
+    /* Normal */
+    font-weight: normal;
+    /* Poids normal */
+    font-style: normal;
+    /* Style normal */
+}
+
+@font-face {
+    font-family: 'body';
+    /* Nom de la police */
+    src: url('./body/body_bold.ttf') format('truetype');
+    /* Bold */
+    font-weight: bold;
+    /* Poids bold */
+    font-style: normal;
+    /* Style normal */
+}
+
+@font-face {
+    font-family: 'body';
+    /* Nom de la police */
+    src: url('./body/body_italic.ttf') format('truetype');
+    /* Italic */
+    font-weight: normal;
+    /* Poids normal */
+    font-style: italic;
+    /* Style italic */
+}
+
+@font-face {
+    font-family: 'body';
+    /* Nom de la police */
+    src: url('./body/bodybold_italic.ttf') format('truetype');
+    /* Bold Italic */
+    font-weight: bold;
+    /* Poids bold */
+    font-style: italic;
+    /* Style italic */
+}
+
+body {
+    font-family: 'body'
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'title';
+}
