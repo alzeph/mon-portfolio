@@ -57,7 +57,7 @@ header {
 
 .presentation {
     min-height: 100vh;
-    background-image: url('static/img/cedric.jpeg');
+    background-image: url('../img/cedric.jpeg');
     background-size: cover;
     background-position: center;
 }
